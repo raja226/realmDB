@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appId</key>
+	<string>application-0-anzuc</string>
+	<key>appUrl</key>
+	<string>https://services.cloud.mongodb.com/groups/65e1d861b0bbab5dbeea1dbd/apps/65e1d8d504fd68a873539471</string>
+	<key>baseUrl</key>
+	<string>https://services.cloud.mongodb.com</string>
+	<key>clientApiBaseUrl</key>
+	<string>https://ap-south-1.aws.services.cloud.mongodb.com</string>
+	<key>dataApiBaseUrl</key>
+	<string>https://ap-south-1.aws.data.mongodb-api.com</string>
+    <key>dataExplorerLink</key>
+    <string>https://cloud.mongodb.com/links/65e1d861b0bbab5dbeea1dbd/explorer/AtlasCluster/database/collection/find</string>
+    <key>dataSourceName</key>
+    <string>mongodb-atlas</string>
+</dict>
+</plist>

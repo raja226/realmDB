@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealmSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-Gc-SwB">
+                                <rect key="frame" x="100" y="89" width="193" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="991-im-6cb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="loginButtonTapped">
+                                    <color key="baseForegroundColor" red="0.20392156859999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p0Z-rH-hGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXG-92-vHc">
+                                <rect key="frame" x="100" y="165" width="193" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="NR0-5o-ARw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                    <color key="baseForegroundColor" red="0.20392156859999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUb-OE-wdw"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="s65-4Y-L5H">
+                                <rect key="frame" x="16" y="231" width="361" height="285"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="f5g-9I-JzM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tX0-gk-bZb"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oBY-DB-Ohl"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-D7-mXF">
+                                <rect key="frame" x="16" y="533" width="361" height="285"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="285" id="RLL-cK-Zci"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vgq-r5-jd0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gd8-YQ-X2a"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asL-w8-g7q">
+                                <rect key="frame" x="307" y="89" width="80" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Z04-tZ-50d"/>
+                                    <constraint firstAttribute="width" constant="80" id="kZP-cy-mdT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+ Add"/>
+                                <connections>
+                                    <action selector="contactButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5I-g5-fRP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="asL-w8-g7q" firstAttribute="top" secondItem="l2f-Gc-SwB" secondAttribute="top" id="66X-p9-HOQ"/>
+                            <constraint firstItem="l2f-Gc-SwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="9Hp-4g-59N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s65-4Y-L5H" secondAttribute="trailing" constant="16" id="CJ7-8F-jRJ"/>
+                            <constraint firstItem="LaR-D7-mXF" firstAttribute="top" secondItem="s65-4Y-L5H" secondAttribute="bottom" constant="17" id="DDj-Qa-AeQ"/>
+                            <constraint firstItem="LaR-D7-mXF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QAY-Vd-D7M"/>
+                            <constraint firstItem="l2f-Gc-SwB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Sui-k3-0zh"/>
+                            <constraint firstItem="s65-4Y-L5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UcA-bA-r1Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asL-w8-g7q" secondAttribute="trailing" constant="6" id="YXJ-pd-svN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l2f-Gc-SwB" secondAttribute="trailing" constant="100" id="Zss-RJ-RQW"/>
+                            <constraint firstItem="s65-4Y-L5H" firstAttribute="top" secondItem="eXG-92-vHc" secondAttribute="bottom" constant="16" id="bSe-hf-bBF"/>
+                            <constraint firstItem="eXG-92-vHc" firstAttribute="trailing" secondItem="l2f-Gc-SwB" secondAttribute="trailing" id="feD-Mx-SDp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="asL-w8-g7q" secondAttribute="trailing" constant="6" id="nbT-KN-QJw"/>
+                            <constraint firstItem="eXG-92-vHc" firstAttribute="top" secondItem="l2f-Gc-SwB" secondAttribute="bottom" constant="26" id="py4-Tj-hgM"/>
+                            <constraint firstItem="eXG-92-vHc" firstAttribute="leading" secondItem="l2f-Gc-SwB" secondAttribute="leading" id="tbL-KZ-6pQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LaR-D7-mXF" secondAttribute="trailing" constant="16" id="vyu-UV-b69"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="atlasTableview" destination="LaR-D7-mXF" id="F7k-j7-NqY"/>
+                        <outlet property="myTableview" destination="s65-4Y-L5H" id="iwY-gw-VrK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228.24427480916029" y="-47.183098591549296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
